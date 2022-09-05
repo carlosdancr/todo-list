@@ -19,13 +19,7 @@ export const AppContext = createContext<Context>(null);
 export const AppStorage = ({ children }: Props) => {
   const [taskList, setTaskList] = useState<Task[]>(() => {
     const data = localStorage.getItem("taskList");
-    return data
-      ? JSON.parse(data)
-      : [
-          { id: 1, name: "Academia", done: false },
-          { id: 2, name: "Fazer compras", done: false },
-          { id: 4, name: "Estudar", done: true },
-        ];
+    return data ? JSON.parse(data) : [];
   });
   const [progressBarValue, setProgressBarValue] = useState(0);
 
