@@ -24,7 +24,12 @@ export const AppStorage = ({ children }: Props) => {
   const [progressBarValue, setProgressBarValue] = useState(0);
 
   const handleTaskDelete = (id: number) => {
-    const newTaskList = taskList.filter((task) => task.id !== id);
+    const newTaskList = taskList
+      .filter((task) => task.id !== id)
+      .map((task, index) => {
+        task.id = index + 1;
+        return task;
+      });
     setTaskList(newTaskList);
   };
 
