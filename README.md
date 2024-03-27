@@ -19,7 +19,6 @@
 ## 📌 Links 
  - [Vite](https://vitejs.dev/)
  - [Styled Components](https://styled-components.com/)
- - [Link do design no Figma](https://www.figma.com/file/ByOBf1ZxZZP87BUVf6tkrZ/Portf%C3%B3lio-%7C-To-Do-List?node-id=0%3A1)
 
 ## 📊 Status do projeto
 ✅ Concluído
